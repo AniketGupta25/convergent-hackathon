@@ -1,7 +1,7 @@
 import Navbar from './Navbar/Navbar.js'
 import './global.css'
 import Home from './Home/Home.js'
-//import About from './components/About/About.js'
+import Team from './Team/Team.js'
 //import Footer from './components/Footer/Footer.js'
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
+      <Team/>
     </div>
   );
 }

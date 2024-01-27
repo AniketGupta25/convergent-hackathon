@@ -1,0 +1,42 @@
+.outer {
+    height: 60vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40rem;
+    width: 80rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 32rem;
+    font-family: 'Helvetica Neue';
+    background-color: #0C0E20;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.headshot {
+    width: 20rem;
+    height: 20rem;
+    border-color: #3EC3AC;
+    border-width: 0.3rem;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+.desc {
+    font-size: 2rem;
+    color: whitesmoke;
+}

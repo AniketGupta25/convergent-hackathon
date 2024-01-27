@@ -4,13 +4,12 @@
     height: 6rem;
     align-items: top;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     z-index: 3;
 }
 
 .navbar {
     display: flex;
-    position: sticky;
     flex-direction: row;
     width: inherit;
     height: 6rem;
