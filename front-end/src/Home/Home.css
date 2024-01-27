@@ -42,10 +42,54 @@
     text-align: center;
 }
 
-.fileInput {
-    font-family: 'Helvetica Neue';
+.demoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.submit {
+.button {
     font-family: 'Helvetica Neue';
+    height: 2.5rem;
+    width: 8rem;
+    font: 1.5rem 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: #0C0E20;
+    color: whitesmoke;
+    border: 0.3rem solid #0C0E20;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+    border: none;
+    background-color: #3EC3AC;
+    color: #0C0E20;
+}
+
+.budget {
+    height: 20rem;
+    width: 30rem;
+    background-color: whitesmoke;
+    font-size: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.streak {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.bruh {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
