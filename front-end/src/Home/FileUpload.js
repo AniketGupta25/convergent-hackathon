@@ -1,39 +1,31 @@
 import React from 'react'
 import './Home.css'
 import { useState } from 'react'
+import axios from 'axios'
 
 function FileUpload() {
-    const [file, setFile] = useState()
+    uploadFile = async (e) => {
+        const file = e.target.files[0];
+    if (file != null) {
+        const data = new FormData();
+        data.append('file_from_react', file);
 
-    function handleFile(event) {
-        setFile(event.target.files[0])
-        console.log(event.target.files[0])
+        let response = await fetch('/url_route',
+        {
+            method: 'post',
+            body: data,
+        }
+        );
+        let res = await response.json();
+        if (res.status !== 1){
+        alert('Error uploading file');
+        }
     }
-    function handleUpload() {
-        const formData = new FormData()
-        formData.append('file', file)
-        fetch(
-            'url',
-            {
-                method: "POST",
-                body: formData
-            }
-        ).then((response) => response.json()).then(
-            (result) => {
-                console.log('success', result)
-            }
-        ).catch(error => {
-            console.error("Error:", error)
-        })
-
-    }
+};
 
   return (
     <div className="demoItem">
-        <form onSubmit={handleUpload}>
-            <input type="file" className='fileInput' onChange={handleFile}/>
-            <button type="submit" className='submit'>Upload</button>
-        </form>
+        <input type="file" className='fileInput' onChange={this.uploadFile}/>
     </div>
   )
 }

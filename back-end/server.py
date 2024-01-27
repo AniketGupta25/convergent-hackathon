@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
  
 # Route for seeing a data
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/url_route', methods=['GET', 'POST'])
 def uploadFile():
     if request.method == 'POST':
       # upload file flask
