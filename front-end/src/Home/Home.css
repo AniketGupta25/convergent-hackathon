@@ -1,0 +1,49 @@
+.frame {
+    /*background-color: rgb(212, 211, 211);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vw - 6rem;
+    font-family: 'Helvetica Neue';
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
+    align-items: center;
+    width: 100vw;
+    height: 40rem;
+    background-color: white;
+}
+
+.homeImg {
+    height: 35rem;
+    padding-left: 4rem;
+}
+
+.demoColumn {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 27rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-right: 10rem;
+}
+
+.demoText {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.fileInput {
+    font-family: 'Helvetica Neue';
+}
+
+.submit {
+    font-family: 'Helvetica Neue';
+}

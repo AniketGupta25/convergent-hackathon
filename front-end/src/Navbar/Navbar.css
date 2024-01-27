@@ -1,0 +1,65 @@
+.border {
+    display: flex;
+    width: 100vw;
+    height: 6rem;
+    align-items: top;
+    justify-content: center;
+    position: sticky;
+    z-index: 3;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    width: inherit;
+    height: 6rem;
+    align-items: center;
+    justify-content: left;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0.35rem;
+    border-bottom-color: #3EC3AC;
+    border-style: solid;
+    background-color: #0C0E20;
+}
+
+.logo {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3.6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.desktopMenu {
+    display: flex;
+    width: 30rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-family:'Helvetica Neue';
+}
+
+.desktopMenuListItem {
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: #0C0E20;
+    color: rgb(226, 225, 225);
+    border-color: #0C0E20;
+    border-width: 0.17rem;
+    border-style: solid;
+    min-width: 6rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+    background-color: #3EC3AC;
+    color: #0C0E20;
+    border-color: #0C0E20;
+}
